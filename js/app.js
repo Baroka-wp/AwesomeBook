@@ -1,12 +1,11 @@
 import BookAPI from './BookAPI.js';
 
 const form = document.querySelector('form');
-
 const books = BookAPI.getAllBooks();
-const len = Object.keys(books).length;
-for (let k; k < len; k += 1) {
+
+Object.keys(books).forEach((k) => {
   BookAPI.addBookInDom(books[k].title, books[k].author);
-}
+});
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();

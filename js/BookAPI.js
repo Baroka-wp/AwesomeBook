@@ -3,11 +3,10 @@ export default class BookAPI {
     const mybooks = await fetch(url);
     const bookJson = await mybooks.json();
     const books = await bookJson;
-    const len = Object.keys(books).length;
-    for (let k; k < len; k += 1) {
+    Object.keys(books).forEach((k) => {
       books[k].id = Math.floor(Math.random() * 1000000);
       books[k].updated = new Date().toISOString();
-    }
+    });
     localStorage.setItem('booksList', JSON.stringify(books));
     return books;
   }
