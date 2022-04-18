@@ -3,24 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Baroka'a Portofolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Awesome Book</title>
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
-      <nav class="nav-bar">
-        <a href="#"><img class="logo" src="images/image_geometry.png" alt="logo"></a>
-        <i class="fa-solid fa-bars toolbar"></i>
-      </nav>
+      <h1>Awesome books</h1>
+      <div class="humberger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </header>
-    <section class="headline">
-      <h1 class="hero">Irotori Baroka</h1>
-      <p>
-          Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works. If you like what you see and have a project you need coded, don’t hesitate and contact me.
-      </p>
-      <button type="button" class="header-button">Start collaboration</button>
+    <section class="main">
+      <div class="books"></div>
+      <form>
+          <input id="bookTitle" type="text"  placeholder="Title">
+          <input id="bookAuthor" type="text" placeholder="Author">
+          <small class="messageError"></small>
+          <input type="submit" name="add" value="add">
+      </form>
     </section>
 
+
+    <script type="module" src="js/app.js"></script>
   </body>
 </html>
