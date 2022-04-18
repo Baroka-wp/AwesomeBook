@@ -1,10 +1,9 @@
 export default class BookAPI {
-
   static async getData(url) {
     const mybooks = await fetch(url);
     const bookJson = await mybooks.json();
     const books = await bookJson;
-    Object.keys(books).forEach(k => {
+    Object.keys(books).forEach((k) => {
       books[k].id = Math.floor(Math.random() * 1000000);
       books[k].updated = new Date().toISOString();
     });
