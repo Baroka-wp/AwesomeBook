@@ -83,6 +83,7 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+
 - A special thanks to My coding partners, morning session team, and standup team Partners for their contributions.
 
 ## 📝 License
