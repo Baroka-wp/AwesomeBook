@@ -33,11 +33,11 @@
 - Twitter: [@twitterhandle](https://twitter.com/IrotoriB)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/baroka)
 
-👥 **Co Author : MOSEKA Jamila**
+👥 **Co Author : Jason Felice**
 
-- GitHub: [@githubhandle](#)
-- Twitter: [@twitterhandle](#)
-- LinkedIn: [LinkedIn](#)
+- GitHub: [@githubhandle]((https://github.com/jasonfelice)
+- Twitter: [@twitterhandle](https://www.twitter.com/jasofelice0/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jason-felice-11a5a622b/)
 
 ## Install
 
