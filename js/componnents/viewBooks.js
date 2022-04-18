@@ -2,13 +2,13 @@ export default class ViewBook extends HTMLElement {
   constructor() {
     super();
 
-    this.titl = "";
-    this.author = "";
+    this.titl = '';
+    this.author = '';
   }
 
   connectedCallback() {
-    //this.titl = this.getAttribute("titl");
-    //this.author = this.getAttribute("author");
+    // this.titl = this.getAttribute("titl");
+    // this.author = this.getAttribute("author");
     this.render();
   }
 
