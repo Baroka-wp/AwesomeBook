@@ -102,9 +102,15 @@ nav ul li:hover{
 
 .books {
   width: 80%;
-  margin: 15vh auto auto auto;
-  height: 85vh;
-  overflow: scroll;
+  margin: 11vh auto auto auto;
+  padding: 0 20px;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.books::-webkit-scrollbar {
+    display: none;
 }
 
 .title {

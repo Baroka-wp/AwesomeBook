@@ -30,7 +30,8 @@ document.addEventListener('click',(e) => {
   if (e.target.matches('.add_book')) {
       App.displayNewBookForm()
   } else if (e.target.matches('.book_list') ||
-            e.target.matches('.fa-xmark')
+            e.target.matches('.fa-xmark') ||
+            e.target.matches('.logo')
           ){
       App.displayBooklist();
   } else if(e.target.matches('.contact')) {
