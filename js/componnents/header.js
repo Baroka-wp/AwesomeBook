@@ -11,7 +11,7 @@ export default class Header extends HTMLElement {
   render() {
     this.innerHTML = `
       <header>
-        <h1>Awesome books <i class="fa-solid fa-book-atlas"></i></h1>
+        <h1><a class="logo" href="#">Awesome books</a> <i class="fa-solid fa-book-atlas"></i></h1>
         <div class="humberger">
           <span class="bar"></span>
           <span class="bar"></span>
