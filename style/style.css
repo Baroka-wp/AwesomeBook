@@ -1,0 +1,216 @@
+/*https://www.dafont.com/theme.php?cat=601*/
+@font-face {font-family: "Anger Style";src: url("../fonts/AngerStyles.ttf");}
+@font-face {font-family: "Chellin";src: url("../fonts/AngerStyles.ttf");}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,p,ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #1a2236;
+}
+.humberger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.humberger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.humberger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top:0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 20px 13px 2px #0000006e;
+  background-color: white;
+}
+
+header h1 {
+  font-family: "Anger Style", sans-serif;
+  font-size: 35px;
+  padding: 10px 0;
+  text-align: center;
+  width: 85%;
+}
+
+nav {
+  background-color: white;
+  position: absolute;
+  top:70px;
+  right: -300px;
+  padding: 10px;
+  box-shadow: 0px 20px 13px 2px #0000006e;
+  transition: 0.7s ease-in-out;
+}
+nav.active {
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  top:70px;
+  right: 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li{
+  padding: 10px;
+}
+
+nav ul li:hover{
+  user-select: all;
+  border-bottom: 3px solid black;
+}
+
+.humberger {
+  cursor: pointer;
+}
+
+.books {
+  width: 80%;
+  margin: 15vh auto auto auto;
+  height: 85vh;
+  overflow: scroll;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 17px;
+  padding: 5px;
+}
+
+.books .author {
+  font-family: "Chellin", sans-serif;
+  color: #df415c;
+  padding: 5px;
+}
+
+.contact_info {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  gap: 20px;
+  flex-direction: column;
+}
+
+.contact_info ul li {
+  list-style-type: square;
+}
+.form_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-xmark {
+  cursor: pointer;
+}
+
+
+form {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  gap: 10px;
+  flex-direction: column;
+}
+
+form input[type=submit] {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+
+form input[type=submit]:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+form input[type=text] {
+  padding: 10px;
+  border: 1px solid #ed3a3a57;
+}
+
+form input:focus {
+  border: 1px solid #black;
+}
+
+form input:active {
+  border: 1px solid #black;
+}
+
+.single_book {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #80808026;
+  box-shadow: 0px 2px 2px 0px #0000006e;
+  margin-bottom: 10px;
+  padding: 20px 10px;
+}
+
+.single_book button {
+  cursor: pointer;
+  padding: 4px;
+  border: 1px solid black;
+  box-shadow: 0px 2px 2px 0px #0000006e;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 7.5vh;
+  width: 100%;
+}

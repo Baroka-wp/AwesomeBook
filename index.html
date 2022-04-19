@@ -3,29 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Baroka'a Portofolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Awesome Book</title>
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header>
-      <h1>Awesome books <i class="fa-solid fa-book-atlas"></i></h1>
-      <div class="humberger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </header>
-    <section class="main">
-      <div class="books">
-      </div>
-      <form>
-          <input id="bookTitle" type="text"  placeholder="Title">
-          <input id="bookAuthor" type="text" placeholder="Author">
-          <small class="messageError"></small>
-          <input type="submit" name="add" value="add">
-      </form>
-    </section>
-
+    <v-header></v-header>
+    <div id="app"></div>
+    <v-footer></v-footer>
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
