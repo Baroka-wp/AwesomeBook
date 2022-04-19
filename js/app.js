@@ -7,6 +7,7 @@ export default class App {
     const books = BookAPI.getAllBooks();
     const div = document.createElement('div');
     div.classList.add('books');
+    div.innerHTML = '<h2>All Awesome books</h2>';
     app.innerHTML = '';
     app.appendChild(div);
     Object.keys(books).forEach((k) => {
