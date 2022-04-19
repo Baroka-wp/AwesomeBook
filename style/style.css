@@ -74,6 +74,13 @@ header h1 {
   width: 85%;
 }
 
+.contact_info h2 {
+  font-family: "Chellin", sans-serif;
+  color: #df415c;
+  font-weight: bolder;
+  font-style: 50px;
+}
+
 nav {
   background-color: white;
   position: absolute;
@@ -191,7 +198,8 @@ form input[type=text] {
   border: 1px solid #ed3a3a57;
 }
 
-form input:focus {
+form input[type=text]:focus {
+  outline: none;
   border: 1px solid black;
 }
 
