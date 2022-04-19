@@ -1,6 +1,8 @@
-/*https://www.dafont.com/theme.php?cat=601*/
-@font-face {font-family: "Anger Style";src: url("../fonts/AngerStyles.ttf");}
-@font-face {font-family: "Chellin";src: url("../fonts/AngerStyles.ttf");}
+/* https://www.dafont.com/theme.php?cat=601 */
+@font-face { font-family: "Anger Style"; src: url("../fonts/AngerStyles.ttf"); }
+
+@font-face { font-family: "Chellin"; src: url("../fonts/AngerStyles.ttf"); }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
@@ -13,7 +15,11 @@ body {
   margin: 0;
 }
 
-h1,h2,h3,p,ul {
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -36,6 +42,7 @@ a {
   transition: all 0.3s ease;
   background-color: #1a2236;
 }
+
 .humberger.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -51,11 +58,11 @@ a {
 header {
   position: fixed;
   width: 100%;
-  top:0;
+  top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 20px 13px 2px #0000006e;
+  box-shadow: 0 20px 13px 2px #0000006e;
   background-color: white;
 }
 
@@ -70,28 +77,33 @@ header h1 {
 nav {
   background-color: white;
   position: absolute;
-  top:70px;
+  top: 70px;
   right: -300px;
   padding: 10px;
-  box-shadow: 0px 20px 13px 2px #0000006e;
+  box-shadow: 0 20px 13px 2px #0000006e;
   transition: 0.7s ease-in-out;
 }
+
 nav.active {
   transition: 0.3s ease-in-out;
   position: absolute;
-  top:70px;
+  top: 70px;
   right: 0;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+.contact_info ul li {
+  list-style-type: square;
 }
 
 nav ul {
   display: flex;
 }
 
-nav ul li{
-  padding: 10px;
-}
-
-nav ul li:hover{
+nav ul li:hover {
   user-select: all;
   border-bottom: 3px solid black;
 }
@@ -110,7 +122,7 @@ nav ul li:hover{
 }
 
 .books::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .title {
@@ -137,9 +149,6 @@ nav ul li:hover{
   flex-direction: column;
 }
 
-.contact_info ul li {
-  list-style-type: square;
-}
 .form_head {
   display: flex;
   align-items: center;
@@ -149,7 +158,6 @@ nav ul li:hover{
 .fa-xmark {
   cursor: pointer;
 }
-
 
 form {
   display: flex;
@@ -184,11 +192,11 @@ form input[type=text] {
 }
 
 form input:focus {
-  border: 1px solid #black;
+  border: 1px solid black;
 }
 
 form input:active {
-  border: 1px solid #black;
+  border: 1px solid black;
 }
 
 .single_book {
@@ -196,7 +204,7 @@ form input:active {
   justify-content: space-between;
   align-items: stretch;
   background-color: #80808026;
-  box-shadow: 0px 2px 2px 0px #0000006e;
+  box-shadow: 0 2px 2px 0 #0000006e;
   margin-bottom: 10px;
   padding: 20px 10px;
 }
@@ -205,9 +213,8 @@ form input:active {
   cursor: pointer;
   padding: 4px;
   border: 1px solid black;
-  box-shadow: 0px 2px 2px 0px #0000006e;
+  box-shadow: 0 2px 2px 0 #0000006e;
 }
-
 
 footer {
   position: fixed;

@@ -1,21 +1,21 @@
 import BookAPI from './BookAPI.js';
 
+const app = document.querySelector('#app');
+
 export default class App {
-
-
-  static displayBooklist(){
+  static displayBooklist() {
     const books = BookAPI.getAllBooks();
-    let div = document.createElement('div');
+    const div = document.createElement('div');
     div.classList.add('books');
-    app.innerHTML = ""
+    app.innerHTML = '';
     app.appendChild(div);
-    Object.keys(books).forEach(k => {
+    Object.keys(books).forEach((k) => {
       BookAPI.addBookInDom(books[k].title, books[k].author);
     });
   }
 
   static displayNewBookForm() {
-    app.innerHTML = ""
+    app.innerHTML = '';
     app.innerHTML = `
         <form class="form_add">
             <div class=form_head> <h2>Add new book</h2> <i class="fa-solid fa-xmark"></i></div>
@@ -24,33 +24,33 @@ export default class App {
             <small class="message"></small>
             <input type="submit" name="add" value="add">
         </form>
-    `
+    `;
     const form = document.querySelector('form');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const bookTitle = document.querySelector('#bookTitle');
       const bookAuthor = document.querySelector('#bookAuthor');
-      const message = document.querySelector('.message')
+      const message = document.querySelector('.message');
 
-      if(bookTitle.value=="" || bookAuthor.value=="") {
-        message.textContent = "";
-        message.style.color = "red";
-        message.textContent = "❌ All field should be fill !"
-      }else {
-        //BookAPI.addBookInDom(bookTitle.value, bookAuthor.value);
-        BookAPI.addBook({ title: bookTitle.value, author: bookAuthor.value});
+      if (bookTitle.value === '' || bookAuthor.value === '') {
+        message.textContent = '';
+        message.style.color = 'red';
+        message.textContent = '❌ All field should be fill !';
+      } else {
+        // BookAPI.addBookInDom(bookTitle.value, bookAuthor.value);
+        BookAPI.addBook({ title: bookTitle.value, author: bookAuthor.value });
         bookTitle.value = '';
         bookAuthor.value = '';
-        message.textContent = "";
-        message.style.color = "green";
-        message.textContent = "✅ Your book has been added succesfully !"
+        message.textContent = '';
+        message.style.color = 'green';
+        message.textContent = '✅ Your book has been added succesfully !';
       }
     });
   }
 
   static displayContact() {
-    app.innerHTML = ""
-    let div = document.createElement('div');
+    app.innerHTML = '';
+    const div = document.createElement('div');
     div.classList.add('contact_info');
     div.innerHTML = `
         <div class=form_head> <h2>Contact informations</h2> <i class="fa-solid fa-xmark"></i></div>
@@ -63,6 +63,4 @@ export default class App {
     `;
     app.appendChild(div);
   }
-
-
 }
