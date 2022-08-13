@@ -7,9 +7,6 @@
 
 > This website is the simple list of my favorites book.
 
-## LOOM VIDEO PRESENTING
-[Watch the presentation of the projet on Loom](#)
-
 ## Built With
 
 - Html
@@ -19,7 +16,7 @@
 - Figma
 
 ## Mookup
-![free-showcasing-header-mockup](#)
+![Capture d’écran 2022-08-13 à 16 47 16](https://user-images.githubusercontent.com/67879818/184501467-1e6e3965-70d6-4c90-bdb2-ed06e5ddf811.png)
 
 ## Live
 
